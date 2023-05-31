@@ -4,6 +4,11 @@ First Method :  Using Set : =>
     
         const arr = [1,2,3,4,5,6,5,4,3]
         const uniqueArray  = [...new set(arr)]
+        
+    Note : -
+        new Set(arr) creates a new Set object and initializes it with the elements from the arr array
+        [...new Set(arr)] uses the spread operator ... to spread the unique elements from the Set object into a new array. 
+        This creates a new array with only the unique values from the arr array.
     
  2nd method :  Using HashMap : =>
        const arr = [1,2,3,4,5,6,5,4,3]
