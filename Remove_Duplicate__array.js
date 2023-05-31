@@ -28,3 +28,24 @@ First Method :  Using Set : =>
     This means that hashMap is a plain object with no built-in properties or methods like toString() or hasOwnProperty().
     The null parameter passed to Object.create() ensures that the created object doesn't have a prototype chain. 
     As a result, it doesn't inherit any properties or methods from its prototype.
+
+3rd Method : Using Array Filter method :=>
+         const arr = [1,2,3,4,5,6,5,4,3]
+         const uniqueArray = arr.filter((value,i) =>{
+                  console.log(arr.indexOf(value) , i) 
+                return arr.indexOf(value) === i ; 
+         })
+o/p of 35 line : -          
+0 0
+1 1
+2 2
+3 3
+4 4
+5 5
+4 6
+3 7
+2 8
+
+
+    
+
