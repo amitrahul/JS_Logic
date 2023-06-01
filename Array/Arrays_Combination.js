@@ -1,4 +1,4 @@
-Longhand : =>
+// Longhand : =>
     
         let array1 = [10, 20, 30];
         let array2 = [40, 50, 60];
@@ -16,13 +16,13 @@ Longhand : =>
 
         // Output: [10, 20, 30, 40, 50, 60]
 
-Shorthand  :  =>
+// Shorthand  :  =>
 
-      Approach 1 : Using Concat method  =>
+      // Approach 1 : Using Concat method  =>
              
-           let array1 = [10, 20, 30];
-           let array2 = [40, 50, 60];
-           let mergedArray = array1.concat(array2);
+           let array3 = [10, 20, 30];
+           let array4 = [40, 50, 60];
+           let mergedArray1 = array3.concat(array4);
 
       Approach 2 : Using Spread Operator =>
       
