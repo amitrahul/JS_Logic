@@ -1,2 +1,4 @@
 # JS_Logic
 This repo describe the concept regarding latest Js.
+JS Books : -
+https://eloquentjavascript.net/
