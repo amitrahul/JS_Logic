@@ -9,7 +9,8 @@ const lowerCase = (c) => {
     const ascii = c.charCodeAt(0);
     return String.fromCharCode(ascii - 32);
   };
-  
+  /*********************************************************************************/
+
   console.log(lowerCase("D")); // d
   console.log(upperCase("l")); // L
   
@@ -64,3 +65,55 @@ const lowerCase = (c) => {
 //   console.log(simArray)  //  ['a', 'i', 'r', 'T', 'E', 'L']
 //    sim=simArray.join('')
 //   console.log(sim); // airTEL
+
+
+/***********************************************************************************/
+
+/** Created method for upper and lower case conversion */
+const lowerandUpperCase = (data) =>{
+  const array = Array.from(data);
+   for(let i=0;i<array.length;i++){
+      if(array[i]>='a'&& array[i]<='z'){
+        array[i] = upperCase(array[i])
+      }
+      else if(array[i]>='A'&& array[i]<='Z'){
+        array[i] = lowerCase(array[i])
+      }
+    }
+    return array.join('');
+}
+
+const phone = ["asus","SAMsung","Iphone"]
+const phonedata =phone.join('');  //  asusSAMsungIphone
+// const phneArr = Array.from(phonedata);
+// console.log(phneArr);
+//  ['a', 's', 'u', 's', 'S', 'A', 'M', 's', 'u', 'n', 'g', 'I', 'p', 'h', 'o', 'n', 'e']
+console.log(lowerandUpperCase(phonedata))
+
+/** created method for lower case conversion */
+// data is passed in form of string
+const lowerCaseConversion = (data) =>{
+  const array = Array.from(data);
+  for(let i=0;i<array.length;i++){
+  if(array[i]>='A'&& array[i]<='Z'){
+    array[i] = lowerCase(array[i])
+  }
+}
+return array.join('');
+}
+
+console.log(lowerCaseConversion("CRICKET")) // cricket
+
+/** created method for upper case conversion */
+// data is passed in form of string
+const upperCaseConversion = (data) =>{
+  const array = Array.from(data);
+  for(let i=0;i<array.length;i++){
+    if(array[i]>='a'&& array[i]<='z'){
+      array[i] = upperCase(array[i])
+    }
+  }
+return array.join('');
+}
+
+console.log(upperCaseConversion("tennis")) // TENNIS
